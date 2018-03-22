@@ -1,0 +1,141 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Форма</title>
+</head>
+<body>
+	<article>
+		<h3>Реєстрація транспортного засобу</h3>
+		<form action="#">
+			<label><b>Виберіть тип транспортного засобу</b></label>
+			<p>
+				<select  size="2" required>
+					<option value="1">Легковий</option>
+					<option value="2">Грузовий</option>
+					<option value="3">Мото</option>
+				</select>
+			</p>
+			<label><b>Виберіть тип палива</b></label>
+		
+		<p>
+			<label>
+ 			 <input type="radio" name="fuel" required>
+ 			 Бензин
+		</label>
+		</p>
+		<p>
+		<label>
+  			<input type="radio" name="fuel" required>
+  			Дизель
+		</label>
+		</p>
+		<p>
+		<label>
+  			<input type="radio" name="fuel" required>
+ 			 Електро
+		</label>
+		</p>
+		<p>
+		<label>
+  			<input type="radio" name="fuel" required>
+  			Гібрид
+		</label>
+		</p>
+		<p>
+			<label for="marka"><b>Введіть марку</b> </label>
+			</p>
+			<p>
+			<input id="marka" type="text" placeholder="marka" required>
+			</p>
+			<label for="model"><b>Введіть модель </b></label>
+			<p>
+			<input id="model" type="text" placeholder="model" required>
+			</p>
+			<p>
+			<label><b>Виберіть рік випуску</b></label>
+			</p>
+			<p>
+			<input type="number"  min="1980" max="2018" step="1"  required>
+			</p>
+			<p>
+			<label><b>Виберіть об'єм двигуна</b></label>
+			</p>
+			<p>
+			<input type="number"  min="0" max="10" step="0.1"  required>
+			</p>
+			<label><b>Виберіть тип трансмісії</b></label>
+			<p>
+				<select  size="2" required>
+					<option value="1">Механічна</option>
+					<option value="2">Автоматична</option>
+					<option value="3">Роботизована</option>
+					<option value="4">Варіатор</option>
+				</select>
+			</p>
+			<p>
+			<label><b>Виберіть кількість дверей</b></label>
+			</p>
+			<p>
+			<input type="number"  min="0" max="5" step="1"  required>
+			</p>
+			<p>
+			<label for="vin"><b>Введіть VIN номер </b> </label>
+			</p>
+			<p>
+			<input id="vin" type="password" placeholder="vin number" required>
+			</p>
+			<label><b>Виберіть тип приводу</b></label>
+		
+		<p>
+			<label>
+ 			 <input type="radio" name="wheel" required>
+ 			 Передній
+		</label>
+		</p>
+		<p>
+		<label>
+  			<input type="radio" name="wheel" required>
+  			Задній
+		</label>
+		</p>
+		<p>
+		<label>
+  			<input type="radio" name="wheel" required>
+ 			 Повний
+		</label>
+		</p>
+		<label><b>Виберіть радіус колеса</b></label>
+		 <p>
+		 <input type="range" min="10" max="25" required>	
+		 </p>
+		 <label><b>Завантажте фото</b></label>
+		 <input type="file" required>
+		 <p>
+			<label for="km"><b>Введіть пробіг</b> </label>
+			</p>
+			<p>
+			<textarea placeholder="km" required ></textarea>
+			</p>
+			<p>
+				<label><b>Ваш e-mail</b></label>
+			</p>
+			<p>
+				<input type="email"  id="email" size="25" placeholder="e-mail" required>
+			</p>
+			<p>
+				<label><b>Я зоден з умовами</b></label>
+				<input type="checkbox" required>
+			</p>
+			<input type="submit" value="OK" />
+			<input type="reset" value="Reset" />
+
+		</form>
+	</article>
+<footer>
+		<hr>
+		<center><p><i>© Мілянець Тарас 2018</i></p></center>
+	</footer>
+</body>
+</html>
